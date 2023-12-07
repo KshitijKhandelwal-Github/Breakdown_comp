@@ -1,0 +1,136 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  display: grid;
+  place-items: center;
+}
+
+.breakdown {
+  width: 23vw;
+  height: 23vw;
+  background-color: white;
+  border-radius: 4%;
+  padding: 1.5vw;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  filter: drop-shadow(0px 0px 15px #c1c1c1);
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading > p {
+  font-weight: bold;
+  font-size: 1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading > a {
+  color: #afafaf;
+  font-size: 1vw;
+}
+.circle {
+  margin: 0;
+}
+.data {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  position: relative;
+  right: 1vw;
+}
+.circle * {
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f2f2f2;
+}
+.outer {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: 0.15vw solid black;
+  border-top: 0.15vw solid transparent;
+  transform: rotate(-45deg);
+}
+.inner {
+  width: 98%;
+  height: 98%;
+  text-align: center;
+  transform: rotate(45deg);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.one .perc {
+  font-size: clamp(0.2vw, 1.7vw, 3vw);
+}
+.city {
+  font-size: clamp(0.1vw, 1vw, 7vw);
+}
+.two .perc {
+  font-size: clamp(0vw, 2.5vw, 17vw);
+}
+.three .perc {
+  font-size: clamp(0vw, 2vw, 14vw);
+}
+.one {
+  height: 7.5vw;
+  width: 7.5vw;
+  grid-column: 3;
+  margin-top: -1vw;
+}
+.one > .outer > .inner {
+  background-color: rgb(133, 108, 186);
+}
+.one > .outer {
+  border-color: rgb(133, 108, 186);
+  border-top-color: transparent;
+}
+.two {
+  height: 11vw;
+  width: 11vw;
+  grid-column: 4;
+  grid-row: 1/3;
+  margin-top: -2vw;
+  margin-left: -0.7vw;
+}
+.two > .outer > .inner {
+  background-color: rgb(244, 162, 61);
+}
+.two > .outer {
+  border-color: rgb(244, 162, 61);
+  border-top-color: transparent;
+}
+.three {
+  height: 9vw;
+  width: 9vw;
+  grid-column: 2/4;
+  margin-top: -3vw;
+}
+.three > .outer > .inner {
+  background-color: rgb(66, 186, 222);
+}
+.three > .outer {
+  border-color: rgb(66, 186, 222);
+  border-top-color: transparent;
+}
